@@ -1,3 +1,4 @@
 .env
 playground
 node_modules
+server/src/.env
