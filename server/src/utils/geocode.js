@@ -1,7 +1,7 @@
 const request = require('request')
 const dotenv = require('dotenv').config()
 
-const GEO_KEYY = process.env.GEO_KEYY
+const GEO_KEY = process.env.GEO_KEY
 
 const geocode = (address, callback) => {
     
