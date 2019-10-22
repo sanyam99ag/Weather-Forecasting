@@ -5,7 +5,7 @@ const GEO_KEY = process.env.GEO_KEY
 
 const geocode = (address, callback) => {
     
-    const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'+ address +'.json?access_token=pk.'+ GEO_KEYY
+    const url = 'https://api.mapbox.com/geocoding/v5/mapbox.places/'+ address +'.json?access_token=pk.'+ GEO_KEY
     request({url, json: true}, (error, {body}) => {
         if(error) {
             callback('Unable to connect to the location service !!', undefined)
