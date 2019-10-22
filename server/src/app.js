@@ -6,6 +6,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 var myParser = require("body-parser");
+const PORT = process.env.PORT || 3000;
 
 // define path for express config
 const app = express()
@@ -102,6 +103,6 @@ app.get('*', (req, res) => {
     
 // });
 
-app.listen(3000, () =>{
+app.listen(PORT, () =>{
     console.log('Server is on port no. 3000')
 })
